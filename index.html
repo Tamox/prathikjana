@@ -8,7 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    <script>
+//Add your images, we'll set the path in the next step
+    var images = ['img/sanjana1.jpg', 'img/sanjana2.jpg', 'img/sanjana3.jpg'];
+    
+//Build the img, then do a bit of maths to randomize load and append to a div. Add a touch off css to fade them badboys in all sexy like.
+    $('<img class="fade-in" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#banner-load');
+	</script>
     <title>Prathikjana</title>
 
     <!-- Bootstrap Core CSS -->
@@ -65,15 +71,15 @@
         <div class="intro-body">
             <div class="container">
                 <div class="row">
-                	<div class="col-sm-1"> 
-                	<img src="img/prathik1.jpg" alt="COP" style="width:250px;">
+                	<div class="col-sm-3" id = "banner-load"> 
+                	<!-- <img src="img/prathik1.jpg" alt="COP" style="width:275px;"> -->
                 	</div>
-                    <div class="col-md-8 col-md-offset-3">
+                    <div class="col-md-6 ">
                         <h1 class="brand-heading">THATS A BIG COP</h1>
                         <p class="intro-text">The cop is going to happen. We all know it.</p>
                     </div>
-                    <div class="col-sm-1"> 
-                	<img src="img/sanjana1.jpg" alt="COP" style="width:250px;">
+                    <div class="col-sm-3"> 
+                	<img src="img/sanjana1.jpg" alt="COP" style="width:275px;">
                 	</div>
                 </div>
             </div>

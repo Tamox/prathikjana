@@ -26,13 +26,7 @@
 @keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
 
 </style>
-    <script>
-//Add your images, we'll set the path in the next step
-    var images = ['sanjana1.jpg', 'sanjana2.jpg', 'sanjana3.jpg'];
     
-//Build the img, then do a bit of maths to randomize load and append to a div. Add a touch off css to fade them badboys in all sexy like.
-    $('<img class="fade-in" src="img/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#banner-load');
-	</script>
     <title>Prathikjana</title>
 
     <!-- Bootstrap Core CSS -->
@@ -102,6 +96,13 @@
                 </div>
             </div>
         </div>
+        <script>
+//Add your images, we'll set the path in the next step
+    var images = ['sanjana1.jpg', 'sanjana2.jpg', 'sanjana3.jpg'];
+    
+//Build the img, then do a bit of maths to randomize load and append to a div. Add a touch off css to fade them badboys in all sexy like.
+    $('<img class="fade-in" src="img/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#banner-load');
+	</script>
     </header>
 
 
